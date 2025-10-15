@@ -1,115 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Overlook Reality • Credit Consulting</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Overlook Reality Consulting</title>
+  <meta name="description" content="Strategy, systems, and hands-on execution — taskforce staffing, credit & financial consulting, and custom solutions." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="font-[Inter] bg-slate-50 text-slate-800">
-  <!-- NAVBAR -->
-  <header class="sticky top-0 z-50 bg-white/90 border-b backdrop-blur">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3">
-        <div class="w-9 h-9 rounded-xl bg-blue-600 grid place-items-center text-white font-bold">OR</div>
-        <span class="font-semibold">Overlook Reality • Credit Consulting</span>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Overlook Reality Consulting">
+        <img class="logo" src="assets/logo.png" alt="Overlook Reality Consulting logo" onerror="this.style.display='none';document.querySelector('.brand-text').style.display='inline-block';">
+        <span class="brand-text">Overlook Reality Consulting</span>
       </a>
-      <nav class="hidden md:flex gap-6 text-sm">
-        <a href="index.html" class="hover:text-blue-600">Home</a>
-        <a href="book.html" class="hover:text-blue-600">Book</a>
-        <a href="pricing.html" class="hover:text-blue-600">Pricing</a>
-        <a href="results.html" class="hover:text-blue-600">Results</a>
-        <a href="faq.html" class="hover:text-blue-600">FAQ</a>
-        <a href="referrals.html" class="hover:text-blue-600">Referrals</a>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Open Menu">☰</button>
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="btn btn-sm">Contact</a></li>
+        </ul>
       </nav>
-      <a href="book.html" class="inline-block md:hidden px-3 py-2 rounded-xl bg-blue-600 text-white text-sm">Free consult</a>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="bg-gradient-to-b from-white to-slate-50">
-    <div class="max-w-6xl mx-auto px-4 py-20 md:py-24 grid md:grid-cols-2 items-center gap-10">
-      <div>
-        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Credit consulting that puts you in control</h1>
-        <p class="mt-4 text-lg text-slate-600">We dispute errors, build positive history, and coach you step by step. A free consultation gets you started.</p>
-        <ul class="mt-6 space-y-2 text-slate-700 text-sm">
-          <li>• Free consultation</li>
-          <li>• Step-by-step roadmap custom tailored to your situation and goals</li>
-          <li>• Monthly check-ins to review progress and ensure success</li>
-          <li>• Constant support</li>
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-content">
+        <h1>Overlook Reality Consulting</h1>
+        <p class="subheadline">
+          Strategy, systems, and hands-on execution for projects that need to move —
+          taskforce staffing, credit &amp; financial consulting, and custom solutions.
+        </p>
+        <div class="cta-group">
+          <a href="#contact" class="btn">Book a Consultation</a>
+          <a href="#contact" class="btn btn-outline">Contact Us</a>
+        </div>
+        <p class="small meta">Based in Beaverton, OR · Fast turnarounds · Clear deliverables · Weekly reporting</p>
+      </div>
+    </section>
+
+    <section id="services" class="section container">
+      <h2>Services</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Hotel Taskforce &amp; Operations</h3>
+          <p>Short-term leadership and staffing solutions to stabilize teams, improve guest scores, and tighten SOPs.</p>
+        </article>
+        <article class="card">
+          <h3>Credit &amp; Financial Consulting</h3>
+          <p>Credit improvement strategies, dispute planning, and financial readiness support.</p>
+        </article>
+        <article class="card">
+          <h3>Process &amp; Performance Consulting</h3>
+          <p>Workflow audits, playbooks, and KPI dashboards to build clarity and accountability.</p>
+        </article>
+        <article class="card">
+          <h3>Project Rescue &amp; Rapid Execution</h3>
+          <p>When deadlines slip, we step in to reset scope, prioritize, and ship.</p>
+        </article>
+      </div>
+
+      <div class="how-we-work">
+        <h3>How We Work</h3>
+        <ul class="checklist">
+          <li><strong>Discovery (Free 15 min)</strong> → clarify outcomes and constraints</li>
+          <li><strong>Quick plan (24–48 hrs)</strong> → scope, timeline, and pricing</li>
+          <li><strong>Execution</strong> → weekly check-ins and measurable deliverables</li>
         </ul>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="book.html" class="px-5 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700">Book free consultation</a>
-          <a href="pricing.html" class="px-5 py-3 rounded-xl border border-slate-300 font-semibold hover:bg-slate-50">See pricing</a>
-        </div>
+        <p class="muted">Need something different? We scope custom engagements that fit your goals and budget.</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- GUARANTEE -->
-  <section class="bg-emerald-50 py-16">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <div class="inline-block px-6 py-2 mb-6 rounded-full bg-emerald-100 text-emerald-700 font-semibold">
-        Our Guarantee
-      </div>
-      <h2 class="text-3xl font-bold mb-4">
-        If You Don’t Make Your Money Back,<br>
-        You Get Your Money Back
-      </h2>
-      <p class="text-slate-600 mb-6">
-        We’re confident in our credit consulting process. If you follow the plan and don’t see real financial wins,
-        we’ll refund your fees. Simple as that.
+    <section id="about" class="section container">
+      <h2>About</h2>
+      <p>
+        Overlook Reality Consulting helps businesses move from stuck to shipped.
+        The team combines on-the-ground operational experience with clean, data-driven strategy.
+        Whether you need a hotel taskforce leader for a few weeks or a credit strategy designed to help unlock
+        financial goals, everything is built around <strong>clear scope, fast action, and real results</strong>.
       </p>
-      <a href="book.html" 
-         class="px-6 py-3 rounded-xl bg-emerald-600 text-white font-semibold hover:bg-emerald-700">
-        Start Risk-Free Today
-      </a>
-    </div>
-  </section>
+      <ul class="bullets">
+        <li>Turning chaos into clear, actionable steps</li>
+        <li>Driving performance and accountability</li>
+        <li>Simple, effective communication</li>
+      </ul>
+      <p class="muted">Beaverton, Oregon — available for remote or on-site work.</p>
+    </section>
 
-  <!-- HOW IT WORKS -->
-  <section class="py-16 border-t">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center">How it works</h2>
-      <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <div class="p-6 rounded-2xl border shadow-sm bg-white">
-          <div class="text-blue-600 font-bold">1</div>
-          <h3 class="font-semibold mt-2">Free consult</h3>
-          <p class="text-sm text-slate-600 mt-1">We review your profile and goals in a quick call.</p>
-        </div>
-        <div class="p-6 rounded-2xl border shadow-sm bg-white">
-          <div class="text-blue-600 font-bold">2</div>
-          <h3 class="font-semibold mt-2">Custom plan</h3>
-          <p class="text-sm text-slate-600 mt-1">We create a step-by-step roadmap for disputes & building.</p>
-        </div>
-        <div class="p-6 rounded-2xl border shadow-sm bg-white">
-          <div class="text-blue-600 font-bold">3</div>
-          <h3 class="font-semibold mt-2">Monthly check-ins</h3>
-          <p class="text-sm text-slate-600 mt-1">Track progress, adjust tactics, and keep momentum.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>Have a project in mind? Let’s talk.</p>
+      <p><strong>Email:</strong> <a href="mailto:contact@overlookreality.com">contact@overlookreality.com</a></p>
 
-  <!-- FOOTER -->
-  <footer class="py-10 bg-slate-900 text-slate-300 mt-20">
-    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-6 items-center">
-      <div>
-        <div class="text-white font-bold">Overlook Reality</div>
-        <div class="text-sm text-slate-400">Oregon-based • Serving clients nationwide</div>
-      </div>
-      <div class="text-sm">
-        <a href="book.html" class="hover:text-white">Book consult</a> • 
-        <a href="pricing.html" class="hover:text-white">Pricing</a> • 
-        <a href="results.html" class="hover:text-white">Results</a> •
-        <a href="faq.html" class="hover:text-white">FAQ</a> •
-        <a href="referrals.html" class="hover:text-white">Referrals</a>
-      </div>
-      <div class="text-right text-sm">
-        © 2025 Overlook Reality. All rights reserved.
-      </div>
+      <!-- Netlify Forms enabled -->
+      <form name="orc-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+        <input type="hidden" name="form-name" value="orc-contact" />
+        <p class="hidden">
+          <label>Don’t fill this out: <input name="bot-field" /></label>
+        </p>
+        <div class="grid">
+          <label>
+            Name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+        </div>
+        <label>
+          Message / Project details
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <button type="submit" class="btn">Send</button>
+      </form>
+
+      <p class="hint">Prefer email? Reach out at <a href="mailto:contact@overlookreality.com">contact@overlookreality.com</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Overlook Reality Consulting LLC · Beaverton, OR · <a href="mailto:contact@overlookreality.com">contact@overlookreality.com</a></p>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
